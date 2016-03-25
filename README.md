@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/benjick/fauxet.svg?branch=master)](https://travis-ci.org/benjick/fauxet)
+
 ```
 npm install --save fauxet
 ```
