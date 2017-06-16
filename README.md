@@ -7,13 +7,15 @@ npm install --save fauxet
 ```js
 import { tap } from 'fauxet';
 
-myPromise().then(i => doSomething('foo', tap(i)));
-// Logs i to console without having to expand the return statement
-// and adding a console.log
+Promise.resolve('Mjau')
+  .then(tap('Value:')) // Value: Mjau
+  .then(val => console.log(val)); // Mjau
 ```
 
 ```js
 import { tap } from 'fauxet';
+
+const log = tap('Logged:')
 const myString = 'bar';
-tap(myString, 'foo:') // "foo: bar" in the console
+log(myString) // Logged: bar
 ```

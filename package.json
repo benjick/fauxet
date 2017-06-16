@@ -1,6 +1,6 @@
 {
   "name": "fauxet",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Inspired by Debug.log in Elm",
   "main": "dist/fauxet.umd.js",
   "jsnext:main": "dist/fauxet.es6.js",

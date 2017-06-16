@@ -22,24 +22,24 @@ const someSymbol = Symbol('foo');
 describe('the tap function', () => {
   it('with a string', () => {
     const value = 'Hello';
-    strictEqual(tap(value), value);
+    strictEqual(tap()(value), value);
   });
   it('with an object', () => {
-    strictEqual(tap(someObject), someObject);
+    strictEqual(tap()(someObject), someObject);
   });
   it('with an array', () => {
-    strictEqual(tap(someArray), someArray);
+    strictEqual(tap()(someArray), someArray);
   });
   it('with a bool', () => {
-    strictEqual(tap(true), true);
+    strictEqual(tap()(true), true);
   });
   it('with null', () => {
-    strictEqual(tap(null), null);
+    strictEqual(tap()(null), null);
   });
   it('with a symbol', () => {
-    strictEqual(tap(someSymbol), someSymbol);
+    strictEqual(tap()(someSymbol), someSymbol);
   });
   it('with a function', () => {
-    strictEqual(tap(someFunction), someFunction);
+    strictEqual(tap()(someFunction), someFunction);
   });
 });
